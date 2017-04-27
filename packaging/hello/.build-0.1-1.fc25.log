@@ -1,0 +1,31 @@
+
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.LjTw9T
++ umask 022
++ cd /home/nm/Desktop/foss-lab/packaging/hello
++ '[' /home/nm/rpmbuild/BUILDROOT/hello-0.1-1.fc25.x86_64 '!=' / ']'
++ rm -rf /home/nm/rpmbuild/BUILDROOT/hello-0.1-1.fc25.x86_64
+++ dirname /home/nm/rpmbuild/BUILDROOT/hello-0.1-1.fc25.x86_64
++ mkdir -p /home/nm/rpmbuild/BUILDROOT
++ mkdir /home/nm/rpmbuild/BUILDROOT/hello-0.1-1.fc25.x86_64
++ mkdir -p /home/nm/rpmbuild/BUILDROOT/hello-0.1-1.fc25.x86_64//usr/bin
++ install -p -m 755 /home/nm/Desktop/foss-lab/packaging/hello/hello /home/nm/rpmbuild/BUILDROOT/hello-0.1-1.fc25.x86_64//usr/bin
++ /usr/lib/rpm/check-buildroot
++ /usr/lib/rpm/brp-compress
++ /usr/lib/rpm/brp-strip /usr/bin/strip
++ /usr/lib/rpm/brp-strip-comment-note /usr/bin/strip /usr/bin/objdump
++ /usr/lib/rpm/brp-strip-static-archive /usr/bin/strip
++ /usr/lib/rpm/brp-python-bytecompile /usr/bin/python 1
++ /usr/lib/rpm/brp-python-hardlink
++ /usr/lib/rpm/redhat/brp-java-repack-jars
+Processing files: hello-0.1-1.fc25.noarch
+Provides: hello = 0.1-1.fc25
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: /bin/bash
+Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/nm/rpmbuild/BUILDROOT/hello-0.1-1.fc25.x86_64
+Wrote: /home/nm/Desktop/foss-lab/packaging/hello/hello-0.1-1.fc25.src.rpm
+Wrote: /home/nm/Desktop/foss-lab/packaging/hello/noarch/hello-0.1-1.fc25.noarch.rpm
+Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.plc5rC
++ umask 022
++ cd /home/nm/Desktop/foss-lab/packaging/hello
++ /usr/bin/rm -rf /home/nm/rpmbuild/BUILDROOT/hello-0.1-1.fc25.x86_64
++ exit 0
